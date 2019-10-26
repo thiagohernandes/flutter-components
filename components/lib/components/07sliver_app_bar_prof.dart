@@ -10,7 +10,7 @@ class _MainCollapsingToolbarState extends State<MainCollapsingToolbar> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: DefaultTabController(
-        length: 2,
+        length: 3,
         child: NestedScrollView(
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
             return <Widget>[
@@ -38,6 +38,7 @@ class _MainCollapsingToolbarState extends State<MainCollapsingToolbar> {
                     tabs: [
                       Tab(icon: Icon(Icons.info), text: "Tab Main 1"),
                       Tab(icon: Icon(Icons.lightbulb_outline), text: "Tab Main 2"),
+                      Tab(icon: Icon(Icons.people), text: "Tab People"),
                     ],
                   ),
                 ),
@@ -49,6 +50,9 @@ class _MainCollapsingToolbarState extends State<MainCollapsingToolbar> {
             children: [
               Text("Tab 1"),
               Text("Tab 2"),
+              Scaffold(
+                body:  Text("Children"),
+              )
             ]
           ),
         ),

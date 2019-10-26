@@ -5,12 +5,13 @@ import 'package:components/components/04scaffold.dart';
 import 'package:components/components/05sliver_app_bar.dart';
 import 'package:components/components/06sliver_app_bar.dart';
 import 'package:components/components/07sliver_app_bar_prof.dart';
+import 'package:components/components/08sharefile.dart';
 import 'package:flutter/material.dart';
 import 'components/00spiner_state.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: MainCollapsingToolbar(),
+    home: ButtonDemo(),
     debugShowCheckedModeBanner: false,
   ));
 }
